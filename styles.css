@@ -19,7 +19,9 @@ body {
     position: relative;
 }
 p {
-    padding-top: 150px;
+    padding-top: 45px;
+    font-size: 150px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 .topSuit {
@@ -51,4 +53,8 @@ p {
     height: 3vh;
     font-size: 20px;
     color: red;
+}
+button:hover {
+    background: black;
+    cursor: pointer;
 }
