@@ -30,8 +30,11 @@ window.onload = () => {
     }
 
     document.getElementById("numero").innerHTML = generateRandomNumber()
-    document.getElementById("suitSymbol").innerHTML = generateRandomSuit()
-    // document.getElementById("suitSymbol2").innerHTML = generateRandomSuit()
+
+    const suit = generateRandomSuit ()
+
+    document.getElementById("topSuit").innerHTML = suit
+    document.getElementById("bottomSuit").innerHTML = suit
 
 
 
