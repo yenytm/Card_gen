@@ -16,7 +16,7 @@ window.onload = () => {
     "K",
   ];
 
-  document.getElementById("clickButton").addEventListener("click", () => {
+   function cardGen ()  {
     let generateRandomNumber = () => {
       let number = Math.floor(Math.random() * cardNumber.length);
       return cardNumber[number];
@@ -26,15 +26,18 @@ window.onload = () => {
       return cardSuit[suit]
     };
 
-
     document.getElementById("numero").innerHTML = generateRandomNumber();
 
-    const suit = generateRandomSuit();
+    const suits = generateRandomSuit();
 
-    document.getElementById("topSuit").innerHTML = suit;
+    document.getElementById("topSuit").innerHTML = suits;
 
-    document.getElementById("bottomSuit").innerHTML = suit;
+    document.getElementById("bottomSuit").innerHTML = suits;
 
 
-  });
+  };
+  document.getElementById("clickButton").addEventListener("click", cardGen) 
+  return cardGen()
+
 };
+
