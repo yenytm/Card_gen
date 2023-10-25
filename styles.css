@@ -45,12 +45,15 @@ p {
     margin-left: 155px;
     margin-top: 5px;
     padding-top: 4px;
-    width: 20;
-    height: 3vh;
-    font-size: 20px;
-    color: red;
+    height: 4vh;
+    font-size: 1.4em;
+    color: black;
+    background-color: white;
+    border-radius: 2em;
 }
 button:hover {
-    background: black;
+    background-color: white;
     cursor: pointer;
+    border: 5px dashed red;
+    
 }

@@ -1,5 +1,5 @@
 window.onload = () => {
-  const cardSuit = ["♦", "♥", "♠", "♣"];
+  const cardSuit = ["♦", "♥", "♠", "♣"] 
   const cardNumber = [
     "A",
     "2",
@@ -18,24 +18,28 @@ window.onload = () => {
 
    function cardGen ()  {
     let generateRandomNumber = () => {
-      let number = Math.floor(Math.random() * cardNumber.length);
+      let number = Math.floor(Math.random() * cardNumber.length)
       return cardNumber[number];
     };
-    let generateRandomSuit = () => {
-      let suit = Math.floor(Math.random() * cardSuit.length);
-      return cardSuit[suit]
-    };
 
+    let generateRandomSuit = () => {
+      let suit = Math.floor(Math.random() * cardSuit.length)
+        return cardSuit[suit]
+    };
     document.getElementById("numero").innerHTML = generateRandomNumber();
 
-    const suits = generateRandomSuit();
+    const suits = generateRandomSuit() 
 
-    document.getElementById("topSuit").innerHTML = suits;
+    document.getElementById("topSuit").innerHTML = suits
+    
+    document.getElementById("bottomSuit").innerHTML = suits; 
 
-    document.getElementById("bottomSuit").innerHTML = suits;
 
 
   };
+
+  
+
   document.getElementById("clickButton").addEventListener("click", cardGen) 
   return cardGen()
 
